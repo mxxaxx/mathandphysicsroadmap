@@ -1,0 +1,217 @@
+{%extends "base.html" %}
+{% block title %}
+    Roadmap's {{name}}
+{% endblock %}
+{% block content %}
+    <div align="center">
+        <h1>
+            Mete's Roadmap
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col card border-dark">
+            <h3 align="center">
+                Physics
+                <br>
+            </h3>
+            <div class="card-body">
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <a href="/GCSEPhysics" style="text-decoration:none; color:black;">
+                                GCSE Physics
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/AlevelPhysics" style="text-decoration:none; color:black;">
+                                A level Physics
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/IntroductoryMechanics" style="text-decoration:none; color:black;">
+                                Introductory Mechanics
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/Electrostatics" style="text-decoration:none; color:black;">
+                                Electrostatics
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/WavesAndVibrations" style="text-decoration:none; color:black;">
+                                Waves and Vibrations
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/ModernPhysics" style="text-decoration:none; color:black;">
+                                Modern Physics
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/ClassicalMechanics" style="text-decoration:none; color:black;">
+                                Classical Mechanics
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/Electrodynamics" style="text-decoration:none; color:black;">
+                                Electrodynamics
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/QuantumMechanics" style="text-decoration:none; color:black;">
+                                Quantum Mechanics
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/ThermodynamicsAndStatMech" style="text-decoration:none; color:black;">
+                                Thermodynamics and Statistical Mechanics
+                            </a>
+                        </li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col card border-dark">
+            <h3 align="center" class="card-header">
+                Maths
+                <input type="checkbox" id="mathforphysics" name="mathforphysics" value="physicsmathonly" title="If ticked only shows math needed for physics (some of the math for physics is not shown because it isn't used everywhere in physics)" onchange="checkforphysics()"/>
+                <br>
+            </h3>
+            <div class="card-body">
+                <div class="card-text container">
+                    <ul>
+                        <li>
+                            <a href="/Algebra1" class="physicsmath" style="text-decoration:none; color:black;">
+                                Algebra 1
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/Algebra2" class="physicsmath" style="text-decoration:none; color:black;">
+                                Algebra 2
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/Complex Numbers" class="physicsmath"  style="text-decoration:none; color:black;">
+                                Complex Numbers
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/PreCalculus" class="physicsmath"  style="text-decoration:none; color:black;">
+                                PreCalculus
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/Trigonometry" class="physicsmath"  style="text-decoration:none; color:black;">
+                                Trigonometry
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/Calculus1" class="physicsmath"  style="text-decoration:none; color:black;">
+                                Calculus 1
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/Calculus2" class="physicsmath" style="text-decoration:none; color:black;">
+                                Calculus 2
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/LinearAlgebra" class="physicsmath"  style="text-decoration:none; color:black;">
+                                Linear Algebra
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/Calculus3" class="physicsmath" style="text-decoration:none; color:black;">
+                                Calculus 3
+                            </a>
+                        </li>
+                        <br>
+                        <li class="notphysicsmath">
+                            <a href="/AbstractAlgebra" class="notphysicsmath" style="text-decoration:none; color:black;">
+                                Abstract Algebra
+                            </a>
+                        </li>
+                        <br class="notphysicsmath">
+                        <li class="notphysicsmath">
+                            <a href="/NumberTheory" class="notphysicsmath" style="text-decoration:none; color:black;">
+                                Number Theory
+                            </a>
+                        </li>
+                        <br class="notphysicsmath">
+                        <li class="notphysicsmath">
+                            <a href="/SetTheory" class="notphysicsmath" style="text-decoration:none; color:black;">
+                                Set Theory
+                            </a>
+                        </li>
+                        <br class="notphysicsmath">
+                        <li class="notphysicsmath">
+                            <a href="/Topology" class="notphysicsmath" style="text-decoration:none; color:black;">
+                                Topology
+                            </a>
+                        </li>
+                        <br class="notphysicsmath">
+                        <li class="notphysicsmath">
+                            <a href="/DiscreteMath" class="notphysicsmath" style="text-decoration:none; color:black;">
+                                Discrete Math
+                            </a>
+                        </li>
+                        <br class="notphysicsmath">
+                        <li>
+                            <a href="/DifferentialEquations" class="physicsmath" style="text-decoration:none; color:black;">
+                                Differential Equations
+                            </a>
+                        </li>
+                        <br>
+                        <li class="notphysicsmath">
+                            <a href="/ProofWriting"  class="notphysicsmath" style="text-decoration:none; color:black;">
+                                Proofs
+                            </a>
+                        </li>
+                        <br class="notphysicsmath">
+                        <li>
+                            <a href="/RealAnalysis" class="physicsmath"  style="text-decoration:none; color:black;" title="Not Necessarily Needed for Physics, but good to have">
+                                Real Analysis
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="/PartialDifferentialEquations" class="physicsmath"  style="text-decoration:none; color:black;">
+                                Partial Differential Equations
+                            </a>
+                        </li>
+                        <br class="physicsmath">
+                        <li class="notphysicsmath">
+                            <a href="/DifferentialGeometry" class="notphysicsmath" style="text-decoration:none; color:black;">
+                                Differential Geometry
+                            </a>
+                        </li>
+                        <br class="notphysicsmath">
+                        <li>
+                            <a href="/Complex Analysis" class="physicsmath"  style="text-decoration:none; color:black;" title="Not Necessarily Needed for Physics, but good to have">
+                                Complex Analysis
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
